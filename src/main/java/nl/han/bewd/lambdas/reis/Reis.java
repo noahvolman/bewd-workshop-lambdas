@@ -29,7 +29,7 @@ public class Reis {
         this.vervoerMiddel = vervoerMiddel;
     }
 
-    public void vertrek() {
+    public void simuleerReis() {
         System.out.println("Reis " + getSpitsText() + " duurt " + vervoerMiddel.berekenReistijd(isSpits()) + " minuten");
     }
 
