@@ -2,7 +2,6 @@ package nl.han.bewd.lambdas.reis;
 
 public class Reis {
 
-    VervoerStrategy vervoerMiddel;
 
     boolean isSpits;
 
@@ -14,23 +13,13 @@ public class Reis {
         isSpits = spits;
     }
 
-    public Reis() {
-        // Standaard vervoer is fiets
-        this.isSpits = false;
-        this.vervoerMiddel = new FietsVervoerStrategy();
-    }
-
-    public Reis(boolean isSpits, VervoerStrategy vervoerMiddel) {
+    public Reis(boolean isSpits) {
         this.isSpits = isSpits;
-        this.vervoerMiddel = vervoerMiddel;
     }
 
-    public void setVervoerMiddel(VervoerStrategy vervoerMiddel) {
-        this.vervoerMiddel = vervoerMiddel;
-    }
-
-    public void simuleerReis() {
-        System.out.println("Reis " + getSpitsText() + " duurt " + vervoerMiddel.berekenReistijd(isSpits()) + " minuten");
+    public void simuleerReis(VervoerStrategy vervoer) {
+        // Teken het geheugenmodel op dit moment
+        System.out.println("Reis " + getSpitsText() + ", duurt " + vervoer.berekenReistijd(isSpits()) + " minuten");
     }
 
     private String getSpitsText() {
