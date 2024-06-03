@@ -1,8 +1,6 @@
 package nl.han.bewd.lambdas.reis;
 
 public class Reis {
-
-
     boolean isSpits;
 
     public boolean isSpits() {
