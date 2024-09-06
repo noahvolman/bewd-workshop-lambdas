@@ -26,14 +26,5 @@ public class Main {
 
         System.out.println("Met <nieuw> vervoer, lambda edition! (Stap 5)");
         System.out.println("TODO:");
-        // Voorbeeld uitwerking 1 (geavanceerd met elvis)
-        mijnReis.simuleerReis((s) -> s ? 20000 : 1000);
-
-        // Voorbeeld uitwerking 2 (vergelijkbaar met OVVervoer)
-        mijnReis.simuleerReis((s) -> {
-                Random randomNumberGenerator = new Random();
-                return randomNumberGenerator.nextInt(2000);
-                }
-        );
     }
 }
