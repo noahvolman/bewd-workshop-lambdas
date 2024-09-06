@@ -13,21 +13,25 @@ Clone deze git repository zodat je er met je eigen favoriete java IDE mee kan we
 
 Bestudeer de code in de Main class. Volg de code naar de Reis class, VervoerStrategy class en de verschillende implementaties van VervoerStrategy.
 
-### 2. Eigen implementatie van interface
+### 2. Maak er een volwaardig Maven project van
+
+Merk op dat het project nog geen Maven project is. Zorg ervoor dat het dit wel is en dat het via Maven te compileren en package is. 
+
+### 3. Eigen implementatie van interface
 
 Schrijf je eigen implementatie van VervoerStrategy. Wees creatief in het type vervoer dat je toevoegt (UFO, teleportatie, astrale projectie, etc...).
 
-### 3. Geheugenmodel
+### 4. Geheugenmodel
 
 Teken voor jezelf het geheugenmodel zoals je dat geleerd hebt bij OOPD. Teken de situatie vlak voor de aanroep naar ```simuleerReis()```
 
-### 4. Lambda theorie
+### 5. Lambda theorie
 
 Om een eigen implementatie van de VervoerStrategy te gebruiken moet je nu zelf een klasse maken welke de interface implementeerd, de methode implementeren en vervolgens een eigen objectinstantie aanmaken en injecteren in je Reis. Dat is flink wat werk, en er is een snellere manier: Lambda's.
 
 Kijk het filmpje van Coding With John over lambda's: https://www.youtube.com/watch?v=tj5sLSFjVj4
 
-### 5. Reis met lambda Vervoer
+### 6. Reis met lambda Vervoer
 
 John gebruikt een ander voorbeeld dan wij. Waar John een 'Printable' interface gebruikt hebben wij een 'VervoerStrategy'. En waar John alleen een Cat class gebruikt die de printable interface implementeerd zijn er in het workshop project meerdere implementerende classes (OVVervoerStrategy, AutoVervoerStrategy, FietsVervoerStrategy en je eigen implementatie).
 
