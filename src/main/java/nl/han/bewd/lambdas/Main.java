@@ -28,3 +28,7 @@ public class Main {
         System.out.println("TODO:");
     }
 }
+
+
+
+//java -cp target/bewd-workshop-lambdas-1.0-SNAPSHOT.jar nl.han.bewd.lambdas.Main
