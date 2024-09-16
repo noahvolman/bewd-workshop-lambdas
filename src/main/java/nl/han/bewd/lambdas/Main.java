@@ -21,12 +21,14 @@ public class Main {
         mijnReis.simuleerReis(new AutoVervoerStrategy()); // Met auto
         mijnReis.simuleerReis(new OVVervoerStrategy());   // Met OV
 
-        System.out.println("Met <nieuw> vervoer (Stap 2)  ");
-        System.out.println("TODO:");
+        VervoerStrategy Ufo = (isReistijdTijdensSpits) -> {
+            Random randomNumberGenerator = new Random();
+            return randomNumberGenerator.nextInt(5);
+        };
 
-        System.out.println("Met <nieuw> vervoer, lambda edition! (Stap 5)");
-        System.out.println("TODO:");
+        mijnReis.simuleerReis(Ufo); // met Ufo
     }
+
 }
 
 
